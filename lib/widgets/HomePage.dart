@@ -17,10 +17,10 @@ class HomePage extends StatelessWidget {
               height: 150,
               width: 150,
               child: CircleAvatar(
-              child: Image.asset("assets/images/avatar_julien.jpg"),
+              child: Image.asset("assets/images/soleil.png"),
             ),
             ),
-            Text("Avatar Julien",style: TextStyle(fontSize:20.0, fontWeight: FontWeight.bold),)
+            Text("Soleil",style: TextStyle(fontSize:20.0, fontWeight: FontWeight.bold),)
           ],
         )
       ),
