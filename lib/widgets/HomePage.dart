@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:live1_flutter_parlarpratique27fevrier2023/widgets/Live2Page.dart';
+
+import 'Live3Page.dart';
 
 
 
@@ -9,7 +12,44 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text("Ma première application"),leading: Icon(Icons.add_task),),
+
+      appBar: AppBar(title: Text("Ma première application")),
+      drawer: Drawer(child: ListView(children: [
+        DrawerHeader(
+          decoration: BoxDecoration(color: Colors.blue),
+          child: Column(children: [
+            CircleAvatar(backgroundImage: AssetImage('assets/images/soleil.png'),
+            radius: 50,),
+            Padding(
+              padding: const EdgeInsets.only(top:10),
+              child: Text('Menu Flutter',style: TextStyle(
+                fontSize: 18,color: Colors.white, fontWeight: FontWeight.bold),),
+            )
+          ]),
+        ),
+        ListTile(title:Text("Live1"),
+        // le callback 
+        onTap: (){
+
+        },
+        
+        ),
+        Divider(color: Colors.black,thickness: 2.0,),
+        ListTile(title: Text("Live2"),
+        onTap: (){
+          Navigator.of(context).push(MaterialPageRoute(builder: (context) => Live2Page()));
+        },),
+        Divider(color: Colors.black,thickness: 2.0,),
+        ListTile(title:Text("live3"),
+        onTap: (){
+           Navigator.of(context).push(MaterialPageRoute(builder: (context) => Live3Page()));
+        },
+        ),
+        Divider(color: Colors.black,thickness: 2.0,),
+
+
+
+      ]), ),
       body:Center(
         child: Column(
           children: [
