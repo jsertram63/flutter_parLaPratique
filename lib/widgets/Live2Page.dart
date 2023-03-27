@@ -7,7 +7,10 @@ class Live2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text("Live2")),
-    body: Center(child: Text("Live2")),
+    body: Center(child: Text("Live2", style: TextStyle(
+      fontFamily:"delicious",
+      fontSize: 50
+    ),)),
     
     );
   }
