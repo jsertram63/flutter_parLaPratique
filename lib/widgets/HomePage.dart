@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:live1_flutter_parlarpratique27fevrier2023/widgets/FormulairePage.dart';
 import 'package:live1_flutter_parlarpratique27fevrier2023/widgets/Live2Page.dart';
+import 'package:live1_flutter_parlarpratique27fevrier2023/widgets/LiveList.dart';
 
 import 'Live3Page.dart';
 
@@ -44,8 +46,21 @@ class HomePage extends StatelessWidget {
         onTap: (){
            Navigator.of(context).push(MaterialPageRoute(builder: (context) => Live3Page()));
         },
+        
+        ),
+         Divider(color: Colors.black,thickness: 2.0,),
+        ListTile(title:Text("live des listes"),
+        onTap: (){
+           Navigator.of(context).push(MaterialPageRoute(builder: (context) => MaListe()));
+        },
+        
         ),
         Divider(color: Colors.black,thickness: 2.0,),
+          ListTile(title:Text("Formulaire"),
+        onTap: (){
+           Navigator.of(context).push(MaterialPageRoute(builder: (context) => FormulairePage()));
+        })
+        
 
 
 

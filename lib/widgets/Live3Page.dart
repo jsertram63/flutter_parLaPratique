@@ -7,7 +7,7 @@ class Live3Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text("Live3")),
-    body: Row(
+    body: Column(
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
       Expanded(
